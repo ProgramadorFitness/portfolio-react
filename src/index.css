@@ -2,3 +2,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+  scroll-behavior: smooth; /* Habilita el desplazamiento suave */
+}
+
+main {
+  scroll-snap-type: y mandatory; /* Habilita el desplazamiento por secciones */
+}
+
+section {
+  scroll-snap-align: start; /* Alinea la sección al inicio */
+}
